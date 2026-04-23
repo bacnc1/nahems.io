@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Phần mềm quản lý Tài sản</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; height: 100vh; display: flex; align-items: center; }
+        .login-container { display: flex; max-width: 900px; margin: auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        .login-left { background: #fdfdfd; padding: 40px; text-align: center; border-right: 1px solid #eee; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .login-right { padding: 40px; width: 450px; }
+        .logo { width: 120px; margin-bottom: 20px; }
+        .hospital-name { color: #0056b3; font-weight: bold; font-size: 1.2rem; }
+        .system-name { color: #666; font-size: 0.9rem; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-left">
+        <img src="https://via.placeholder.com/120" alt="Logo" class="logo"> <h3 class="hospital-name">Phần mềm quản lý Tài sản</h3>
+        <p class="system-name">Bệnh viện Hữu nghị đa khoa Nghệ An</p>
+    </div>
+
+    <div class="login-right">
+        <h2 class="fw-bold mb-4">Đăng nhập</h2>
+        <form action="khaibao.html"> <div class="mb-3">
+                <label class="form-label small">Tài khoản</label>
+                <input type="text" class="form-control" value="dungnd">
+            </div>
+            <div class="mb-3">
+                <label class="form-label small">Mật khẩu</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="d-flex justify-content-between mb-3 small">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="remember">
+                    <label class="form-check-label" for="remember">Ghi nhớ mật khẩu</label>
+                </div>
+                <a href="#" class="text-decoration-none">Quên mật khẩu?</a>
+            </div>
+            <div class="mb-4">
+                <label class="form-label small">Cơ sở</label>
+                <select class="form-select">
+                    <option selected>BVHNDKNA</option>
+                </select>
+            </div>
+            <div class="row g-2">
+                <div class="col-8">
+                    <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-light w-100 border">Thoát</button>
+                </div>
+            </div>
+            <p class="text-success small mt-3 text-center">Sẵn sàng đăng nhập...</p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
